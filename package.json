@@ -2,9 +2,10 @@
   "name": "webpack-overview",
   "version": "1.0.0",
   "description": "A project to learn how to work with webpack",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode=none",
+    "watch": "npm run build -- --w"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/m0nq/learning-webpack#readme",
   "devDependencies": {
+    "@webpack-cli/init": "^0.1.1",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.1"
   }
