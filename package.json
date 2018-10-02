@@ -18,8 +18,11 @@
   },
   "homepage": "https://github.com/m0nq/learning-webpack#readme",
   "devDependencies": {
-    "@webpack-cli/init": "^0.1.1",
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babel-loader": "^8.0.4",
     "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.1"
+    "webpack-cli": "^3.1.2"
   }
 }

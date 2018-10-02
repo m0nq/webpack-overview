@@ -3,6 +3,7 @@ const arr = [
   'Node',
   'WebPack',
   'React',
-  'Angular']
+  'Angular'
+]
 
 console.log(arr)
