@@ -1,6 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import './style.css'
 
-const SomeComponent = () => <div><h1>Webpack &amp; React... </h1><h2>Together at last!</h2></div>
+class Message extends React.Component {
 
-ReactDOM.render(<SomeComponent />, document.getElementById('react-container'))
+  render () {
+    return (
+      <div>
+        <h1>{this.props.title}</h1>
+        <p>{this.props.message}</p>
+      </div>
+    )
+  }
+}
+
+ReactDOM.render(<Message  title="Email Alex" message="Can you email him?" />,
+  document.getElementById('react-container'))
