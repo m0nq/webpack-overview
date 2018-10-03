@@ -1,18 +1,26 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './style.css'
+import './style.scss'
 
-class Message extends React.Component {
+class Image extends React.Component {
+
+  constructor (props) {
+    super()
+    this.state = {
+      title: "Gorgeous Mountains"
+    }
+  }
 
   render () {
     return (
       <div>
-        <h1>{this.props.title}</h1>
-        <p>{this.props.message}</p>
+        <h1>{this.state.title}</h1>
+        <p>{this.props.caption}</p>
+        <div id="image"/>
       </div>
     )
   }
 }
 
-ReactDOM.render(<Message  title="Email Alex" message="Can you email him?" />,
+ReactDOM.render(<Image title="Desolation Wilderness" caption="Wilderness area in Lake Tahoe, California" />,
   document.getElementById('react-container'))
